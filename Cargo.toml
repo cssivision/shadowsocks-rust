@@ -8,9 +8,6 @@ documentation = "https://docs.rs/shadowsocks-rust"
 keywords = ["shadowsocks", "proxy", "socks", "socks5", "firewall"]
 license = "MIT"
 
-[features]
-default = ["sodiumoxide"]
-
 [lib]
 
 name = "shadowsocks"
@@ -54,7 +51,4 @@ qrcode = { version = "0.4", default-features = false }
 subprocess = "0.1"
 serde_urlencoded = "0.5"
 url = "1.5"
-
-[dependencies.sodiumoxide]
-version = "0.0.15"
-optional = true
+sodiumoxide = { path ="/Users/sivision/workspace/rust/sodiumoxide" }
